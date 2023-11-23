@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat emotastico</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+
+<body>
+
+  <div id="custom-modal">
+    <p id="alert-message"></p>
+    <button class="modal-close" onclick="closeCustomModal()">Cerrar</button>
+  </div>
+
+  <form onsubmit="joinChat(); return false;">
+    <label for="username">Nombre de Usuario:</label>
+    <input type="text" id="username" required>
+    <button type="submit">Entrar al Chat</button>
+  </form>
+
+  <script>
+    function validateUsername() {
+      var usernameInput = document.querySelector('#username');
+      var usernameValue = usernameInput.value.trim();
+      var validCharactersRegex = /^[a-zA-Z0-9_-]+$/;
+
+      if (!usernameValue) {
+        showCustomModal('El nombre de usuario es requerido.');
+        return false;
+      }
+
+      if (!validCharactersRegex.test(usernameValue)) {
+        showCustomModal('El nombre de usuario contiene caracteres no permitidos.');
+        return false;
+      }
+      return true;
+    }
+
+    function showCustomModal(message) {
+      document.getElementById('alert-message').innerText = message;
+      document.getElementById('custom-modal').style.display = 'flex';
+    }
+
+    function closeCustomModal() {
+      document.getElementById('custom-modal').style.display = 'none';
+    }
+
+    function joinChat() {
+      if (validateUsername()) {
+        var username = document.querySelector('#username').value;
+        showCustomModal('Redirigiendo a la sala de chat.');
+        window.location = '/chat/' + username;
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
