@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8080");
+var socket = io.connect("https://chat-profa-pongame-10-xfa.onrender.com");
 var list = document.querySelector("#lista-users");
 var user = document.querySelector("#userName");
 var userId = document.querySelector("#userId");

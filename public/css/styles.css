@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "VarelaRound";
+  font-family: "Holidays";
   src: url("../font/Holidays.otf") format("truetype");
 }
 *{
-  font-family: "VarelaRound";
+  font-family: "Holidays";
 }
 body {
   background-color: #1d1d1d;
   color: #fff;
-  font-family: "VarelaRound";
+  font-family: "Holidays";
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ button {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  font: "VarelaRound";
+  font: "Holidays";
 }
 
 #custom-modal {
@@ -75,7 +75,7 @@ button.modal-close {
 body {
   background-color: #181818; /* Fondo oscuro inspirado en MCR */
   color: #ffffff; /* Texto blanco */
-  font-family: "VarelaRound", sans-serif; /* Fuente personalizada */
+  font-family: "Holidays", sans-serif; /* Fuente personalizada */
 }
 
 .main-container {
@@ -181,7 +181,7 @@ body {
   font-size: 18px;
   font-weight: 900;
   margin-bottom: 20px;
-  font-family: "VarelaRound";
+  font-family: "Holidays";
 }
 
 #custom-modal .modal-content button {

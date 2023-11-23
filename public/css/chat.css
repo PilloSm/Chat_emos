@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "VarelaRound";
+  font-family: "Holidays";
   src: url("../font/Holidays.otf") format("truetype");
 }
 
@@ -64,7 +64,7 @@ body {
   margin-bottom: 1vh;
 }
 * {
-  font-family: "VarelaRound";
+  font-family: "Holidays";
 }
 .infoBox p {
   font-size: 2.2rem;
@@ -158,7 +158,7 @@ body {
     color: #ebe5e5;
     float: left;
     font-size: 1rem;
-    font-family: "VarelaRound";
+    font-family: "Holidays";
     border: transparent;
     background: transparent;
     flex-grow: 1; /* Hacer que el input ocupe el espacio restante */
